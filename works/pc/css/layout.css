@@ -1,0 +1,55 @@
+body { /*font-family: 'Inter', sans-serif; */
+ /*font-family: 'Montserrat', sans-serif; */
+ font-family: 'Noto Sans KR', sans-serif; color: #000; min-width: 1340px; padding-top: 80px; } 
+
+header .header_wrap { z-index: 10; position: fixed; top: 0; left: 0; width: 100%; background: #000; color: #fff; padding: 5px 50px; min-width: 1200px; } 
+header .logo_area { float: left; margin-right: 60px; } 
+header .logo_area .logo { width: 100px; height: 70px; background: url('../images/header_logo.png') no-repeat; background-size: 100px; background-position: center; } 
+header .logo_area h1 a { display: block; height: 100%; } 
+header nav { height: 70px; } 
+header nav .gnb { overflow: hidden; } 
+header nav .gnb > li > a { float: left; padding: 20px 22px; font-weight: 700; font-size: 15px; line-height: 30px; transition: 0.3s ease; } 
+header nav .gnb li a:hover { color: #666; } 
+/** 패밀리사이트 드롭다운 */
+header .gnb .family { display: inline-block; position: relative; width: 120px; } 
+header .gnb .family i { color: #8d8d8d; font-size: 13px; margin-left: 10px; } 
+header .gnb .family .family_list { width: 100%; height: 0; overflow: hidden; } 
+header .gnb .family > ul > li { background: #000; padding-bottom: 10px; text-align: center; } 
+header .gnb .family > ul > li > a img { width: 100px; height: 40px; } 
+header .gnb .family > ul > li > a { display: block; } 
+header .search_wrap { position: absolute; top: 50%; right: 50px; transform: translateY(-50%); } 
+header .search_wrap form { float: left; visibility: hidden; padding-right: 20px; font-size: 15px; } 
+header .search { display: inline-block; width: 24px; height: 24px; background: url('../images/header_search_btn.png') no-repeat; float: right; margin-top: 7px; } 
+header .search.close { background: url('../images/header_close_btn.png') no-repeat; } 
+header .search_wrap form.on { visibility: visible; } 
+header input { background: transparent; outline: 0; color: #fff; border-bottom: 1px solid #303030; } 
+header form .search_btn { background-color: transparent; cursor: pointer; border: 0; color: #fff; border: 1px solid #303030; font-weight: bold; padding: 10px 15px; } 
+footer .footer_wrap { background: #1f1f1f; color: #999; padding: 35px 65px; } 
+footer .company_wrap { overflow: hidden; margin: 0 auto; position: relative; } 
+footer .company_wrap .company_jyp_enter { float: left; width: 600px; height: 200px; } 
+footer .company_wrap .company_jyp { float: left; width: 600px; height: 200px; } 
+footer .company_jyp_enter .title { width: 100px; height: 50px; background-position: center; background-size: cover; /*opacity: 0.5; */
+ /*margin-top: 10px; */
+ background: url('../images/logo_fo.png')}
+footer .info { font-size: 14px; padding-right: 65px; margin-top: 25px; } 
+footer .info span { float: left; line-height: 1.8; } 
+footer .info span::after { content: ''; display: inline-block; color: #999; background: #999; width: 1px; height: 13px; vertical-align: -2px; margin: 0 10px; } 
+footer .info span:nth-child(3)::after { display: none; } 
+footer .info span:last-child::after { display: none; } 
+footer .company_jyp .title { display: inline-block; width: 35px; height: 35px; margin-top: 10px; background: url('../images/logo_02_fo.png') no-repeat; background-position: center; background-size: cover; } 
+footer .family_site_wrap { position: absolute; top: 0; right: 0; } 
+footer .family_site { border: 1px solid #343434; display: inline-block; margin-left: 20px; position: relative; } 
+footer .family_site a { display: inline-block; padding: 10px; font-size: 13px; } 
+footer .family_site a .icon_down { padding-left: 50px; } 
+footer .family_site_wrap .family_sub { position: absolute; top: 40px; left: 0; width: 100%; background: #1f1f1f; z-index: 10; height: 0; overflow: hidden; } 
+footer .family_site_wrap .family_sub a { display: block; } 
+
+footer .footer_link { margin: 25px 0; } 
+footer .footer_link .footer_list_menu { float: left; } 
+footer .footer_link .footer_list_menu a { color: #ddd; margin-right: 40px; } 
+footer .footer_link .footer_list_menu a:hover { text-decoration: underline; } 
+footer .footer_link .footer_list_sns a { margin-left: 25px; opacity: 0.5; font-size: 20px; } 
+footer .copy { font-size: 12px; } 
+footer .footer_top { position: fixed; bottom: 20px; right: 20px; z-index: 100; } 
+footer .top_btn { display: inline-block; width: 60px; height: 60px; background-color: #3589bd; border-radius: 50%; box-shadow: 1px 1px 5px #333; } 
+footer .top_btn { color: #fff; text-align: center; line-height: 60px; } 

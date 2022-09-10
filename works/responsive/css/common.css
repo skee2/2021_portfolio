@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+
+input, button, select {
+  font: inherit;
+  box-sizing: border-box;
+  /* 모든 브라우저에서 똑같이 통일시커줌 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+       border: 0;
+       border-radius: 0;
+}
+/* x버튼 지우기 */
+input[type=text]::ms-clear {
+  display: none;
+}
+
+/* 화살표 사라짐 */
+select::-ms-expand {
+  display: none;
+}
+
+.blind { width: 1px; height: 1px; margin: -1px; position: absolute; overflow: hidden; clip: rect(0, 0, 0, 0); } 
+.hidden { overflow:hidden; } 
+/* 메인 타이틀 공통 스타일 */
+.main_title { font-size: 45px; line-height: 72px; text-align: center; font-weight: 600; color: var(--title_color); } 
+/* 컨텐츠 공통 버튼 */
+.btn_link { display: flex; justify-content: center; } 
+.btn_link a { font-size: 17px; line-height: 24px; width: 270px; height: 60px; padding: 18px 32px; border-radius: 30px; border: 1px solid var(--main_color); color: var(--main_color); text-align: center; font-weight: 600; transition: 0.3s; } 
+.btn_link a:hover { background-color: var(--main_color); color: #fff; } 

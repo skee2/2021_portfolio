@@ -1,0 +1,70 @@
+/* body */
+body { font-family: 'Noto Sans KR', sans-serif; min-width: 320px; font-size: 14px; /** 영문폰트 */
+ /*font-family: 'Roboto', sans-serif; */
+ /*font-family: 'Poppins', sans-serif; */
+ padding-top: 97px; } 
+
+/* ! 아래로 스크롤하면 패딩top 8 -> 2px로 변하게 */
+header .header_wrap { /* 스크롤바를 계산하지 않기 떄문에 더 생길 수 있음 */
+ /*width: 100vw; 100%를 쓴다*/
+ width: 100%; /*padding-top: 25px; */
+ border-bottom: 1px solid #eee; position: fixed; top: 0; left: 0; z-index: 10; background: #fff; height: 97px; transition: 0.4s; } 
+header .header_wrap.on { top: -10px; } 
+.channel .on { color: #000; } 
+header .logo { background: url('../images/logo.jpg')no-repeat; width: 42px; height: 20px; background-size: cover; background-position: center; /*float: left; margin-left: 25px; */}
+header .top_area { /*height: 32px; */
+ display: flex; justify-content: space-between; align-items: center; padding-left: 25px; padding-top: 10px; } 
+header .shop_area { display: flex; } 
+/*header .top_area::after { content: ''; display: block; clear: both; } */
+header .channel { font-family: 'Poppins', sans-serif; font-weight: 600; color: #999; /*float: left; */
+ margin-left: 6px; line-height: 20px; font-size: 14px; } 
+header .channel a { margin-left: 6px; /*float: left; */}
+header .channel a:last-child::before { content: ''; display: inline-block; width: 1px; height: 13px; background: #ddd; margin-right: 6px; vertical-align: -2px; } 
+header .search { background: url('') no-repeat; width: 40px; height: 40px; background-size: 13px; background-position: center; } 
+header .nav_swiper { display: block; } 
+header .nav_swiper .swiper-slide:first-child a::before { content: ''; display: inline-block; background: url('../images/icon_vitamin.png')no-repeat; width: 17px; height: 17px; background-position: center; background-size: cover; vertical-align: -2px; margin-right: 3px; } 
+header .nav_swiper .swiper-slide { width: auto; font-weight: 300; color: #999; line-height: 38px; } 
+header .nav_swiper .swiper-slide a { padding: 0 10px; } 
+header .nav_swiper .swiper-slide:first-child { padding-left: 15px; } 
+/* //header */
+
+footer { background: #000; color: #666; padding: 30px 25px 50px; font-size: 9.5px; } 
+footer .cs_info { margin-bottom: 30px; overflow: hidden; } 
+footer .cs_info .cs_number { color: #fff; float: left; line-height: 20px; } 
+footer .cs_info .cs_number a { font-weight: bold; font-size: 24px; display: block; font-family: 'Roboto', sans-serif; line-height: 30px; } 
+footer .cs_info .cs_time { float: right; line-height: 1.5; }
+.footer_nav { margin: 20px 0; padding-bottom: 10px; overflow: hidden; border-bottom: 1px solid #222; } 
+.footer_nav li { width: 33.3%; float: left; text-align: center; font-weight: 500; padding: 4px 0; line-height: 15px; position: relative; } 
+.footer_nav li::before { content: ''; display: block; background: #666; width: 1px; height: 8px; opacity: 0.5; position: absolute; bottom: 7px; } 
+.footer_nav li:nth-child(3n-2)::before { opacity: 0; } 
+.company { padding-bottom: 17px; text-align: center; } 
+.company > a { font-weight: bold; color: #fff; display: inline-block; font-size: 12px; } 
+.company .btn_more { display: inline-block; width: 16px; height: 16px; background: url('../images/footer_btn_more.png') no-repeat; background-size: cover; vertical-align: -4px; margin-left: 5px; } 
+.company address { margin: 10px 0 17px; line-height: 1.5; text-align: center; } 
+.company address p:nth-child(2) { display: inline-block; } 
+.company address p:nth-child(2)::after { content: ''; display: inline-block; width: 1px; height: 9px; background: #666; margin: 0 5px; vertical-align: -1px; } 
+.company address p:nth-child(3) { display: inline-block; } 
+.company_info a { color: #fff; font-weight: 500; text-decoration: underline; } 
+.company .copy { margin-top: 15px; font-family: 'Poppins', sans-serif; line-height: 1.6; } 
+.company .company_sub { /*visibility: hidden; */
+ height: 0; overflow: hidden; } 
+
+.site_group { width: 268px; margin: 0 auto; font-weight: bold; position: relative; text-align: center; line-height: 30px; } 
+.site_group a { display: inline-block; width: 100%; height: 30px; background: #222; color: #666; } 
+.site_group .global_btn::after { content: ''; display: inline-block; background: url('../images/footer_global_btn.png'); width: 8px; height: 5px; background-size: cover; position: absolute; right: 15px; top: 12px; } 
+.global_sub { height: 0; overflow: hidden; } 
+/* //footer */
+
+.float_nav { width: 100%; height: 48px; position: fixed; bottom: 0; left: 0; background: #fff; z-index: 10; } 
+.float_nav nav { display: flex; height: 100%; align-items: center; } 
+/* ? height 값이 안들어감 */
+.float_nav a { display: block; width: 20%; text-align: center; float: left; font-size: 8px; color: #bbb; height: 100%; display: flex; /* 세로로 바꾸기 */
+ flex-direction: column; justify-content: center; align-items: center; } 
+.float_nav a::before { width: 15px; height: 15px; margin-bottom: 3px; content: ''; } 
+.float_nav a.home::before { background: url('../images/icon_menu_home.png'); background-size: cover; } 
+.float_nav a.my::before { background: url('../images/icon_menu_user.png') no-repeat; background-size: cover; } 
+.float_nav a.menu::before { background: url('../images/icon_menu_btn.png') no-repeat; background-size: cover; } 
+.float_nav a.cart::before { background: url('../images/icon_menu_cart.png') no-repeat; background-size: cover; } 
+.float_nav a.has_item::before { background: url('../images/icon_menu_view.png') no-repeat; background-size: cover; } 
+.top_btn_wrap { } 
+.float_top_btn { width: 32px; height: 32px; position: fixed; bottom: 80px; right: 10px; z-index: 10; border: 1px solid #efefef; border-radius: 50%; display: inline-block; background: #fff url('../images/icon_top_arrow.png') no-repeat; background-size: 10px; background-position: center; } 
